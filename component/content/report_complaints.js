@@ -169,7 +169,7 @@ const Report_complaints = (data) => {
                                 <div className="card-header">
                                     <div className='row'>
                                         <div className='col-12 col-sm-12 col-md-12 col-lg-7'>
-                                            <h3 className="card-title text-white text-bold">ข้อร้องเรียน ปีงบประมาณ {parseInt(year) + 543} (ต.ค. {parseInt(year) + 543} - ก.ย. {parseInt(year) + 544})</h3>
+                                            <h3 className="card-title text-white text-bold">ข้อร้องเรียน ปีงบประมาณ {parseInt(year) + 543} (ต.ค. {parseInt(year) + 542} - ก.ย. {parseInt(year) + 543})</h3>
                                         </div>
                                         <div className='col-12 col-sm-12 col-md-12 col-lg-5' style={{ textAlign: 'right' }}>
                                             <select className="browser-default custom-select" style={{ width: '100%' }}
@@ -209,7 +209,7 @@ const Report_complaints = (data) => {
                                     </ResponsiveContainer>
                                 </div>
                                 <div className='card-footer'>
-                                    <p>หมายเหตุ : ข้อร้องเรียน ปีงบประมาณ {parseInt(year) + 543} (ต.ค. {parseInt(year) + 543} - ก.ย. {parseInt(year) + 544}) จำนวน {complanTypeAll} ข้อร้องเรียน</p>
+                                    <p>หมายเหตุ : ข้อร้องเรียน ปีงบประมาณ {parseInt(year) + 543} (ต.ค. {parseInt(year) + 542} - ก.ย. {parseInt(year) + 543}) จำนวน {complanTypeAll} ข้อร้องเรียน</p>
                                 </div>
                             </div>
                         </div>
@@ -250,7 +250,7 @@ const Report_complaints = (data) => {
                                     {
                                         dataReport5Year.map((item, i) => {
                                             // console.log(item)
-                                            return <span key={i}>&emsp;&emsp;{i + 1}) ปีงบประมาณ {item.Year} (ต.ค. {item.Year} - ก.ย. {item.Year}) จำนวน {item.total} ข้อร้องเรียน<br /></span>
+                                            return <span key={i}>&emsp;&emsp;{i + 1}) ปีงบประมาณ {item.Year} (ต.ค. {parseInt(item.Year) - 1} - ก.ย. {item.Year}) จำนวน {item.total} ข้อร้องเรียน<br /></span>
                                         })
                                     }
                                 </div>
